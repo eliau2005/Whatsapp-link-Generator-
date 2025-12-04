@@ -1,0 +1,5 @@
+{
+  "name": "WhatsApp Link Generator1",
+  "description": "A tool to create direct WhatsApp links with pre-filled messages and QR codes, optimized for Hebrew users.",
+  "requestFramePermissions": []
+}

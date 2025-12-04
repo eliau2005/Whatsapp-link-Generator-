@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>מחולל קישורי וואטסאפ</title>
+    
+    <!-- Google Fonts: Rubik for Hebrew -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#00a884',
+              'primary-dark': '#008f6f',
+              'primary-container': '#d0f8f0',
+              'on-primary-container': '#00201a',
+              secondary: '#54656f',
+              surface: '#f0f2f5',
+              'surface-container': '#ffffff',
+              error: '#ea0038',
+            },
+            fontFamily: {
+              sans: ['Rubik', 'sans-serif'],
+            },
+            borderRadius: {
+              xl: '24px',
+              '2xl': '32px',
+            },
+            boxShadow: {
+              'card': '0 4px 24px rgba(0, 0, 0, 0.08)',
+              'input': '0 0 0 1px #e2e8f0',
+              'input-focus': '0 0 0 2px #00a884',
+            },
+            animation: {
+              slideUp: 'slideUp 0.5s cubic-bezier(0.2, 0.8, 0.2, 1)',
+              fadeIn: 'fadeIn 0.3s ease-out',
+            },
+            keyframes: {
+              slideUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "qrcode.react": "https://esm.sh/qrcode.react@3.1.0?external=react",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?external=react",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/"
+  }
+}
+</script>
+  </head>
+  <body class="bg-surface text-[#111b21] min-h-screen flex justify-center items-start md:items-center p-0 md:p-4 antialiased selection:bg-primary/20">
+    <div id="root" class="w-full flex justify-center"></div>
+  </body>
+</html>
