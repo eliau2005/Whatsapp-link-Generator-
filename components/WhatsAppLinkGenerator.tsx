@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import { QRCodeSVG } from 'qrcode.react';
+import { FaWhatsapp } from 'react-icons/fa';
 import { 
-  MessageSquareText, 
+  MessageSquareText,
   Link as LinkIcon, 
   Copy, 
   Check, 
@@ -93,7 +93,7 @@ export const WhatsAppLinkGenerator: React.FC = () => {
             <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(circle_at_50%_120%,#fff,transparent)]" />
             <div className="relative z-10 flex flex-col items-center gap-3">
               <div className="bg-white/20 p-3 rounded-full backdrop-blur-sm">
-                <MessageSquareText className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={2} />
+                <FaWhatsapp className="w-8 h-8 md:w-10 md:h-10 text-white" strokeWidth={2} />
               </div>
               <div>
                 <h1 className="font-bold text-2xl md:text-3xl mb-1 tracking-tight">
